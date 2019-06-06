@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:csv="http://www.ibm.com/dfdl/CommaSeparatedFormat" xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ibmDfdlExtn="http://www.ibm.com/dfdl/extensions" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+
+
+    <xsd:import namespace="http://www.ibm.com/dfdl/CommaSeparatedFormat" schemaLocation="IBMdefined/CommaSeparatedFormat.xsd"/>
+    <xsd:annotation>
+		<xsd:appinfo source="http://www.ogf.org/dfdl/">
+			<dfdl:format documentFinalTerminatorCanBeMissing="yes" encoding="{$dfdl:encoding}" escapeSchemeRef="csv:CSVEscapeScheme" ref="csv:CommaSeparatedFormat"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+	<xsd:element ibmSchExtn:docRoot="true" name="Response">
+		<xsd:complexType>
+			<xsd:sequence dfdl:separator="">
+				<xsd:element dfdl:terminator="%CR;%LF;%WSP*;" maxOccurs="unbounded" name="getProducts">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ibmDfdlExtn:sampleValue="" name="group_id" type="xsd:string"/>
+                            							<xsd:element ibmDfdlExtn:sampleValue="" name="group_name" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="item_type" type="xsd:string"/>							
+							<xsd:element ibmDfdlExtn:sampleValue="" name="is_taxable" type="xsd:string"/>							
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="tax_id" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="tax_name" type="xsd:string"/>
+                                                    <xsd:element ibmDfdlExtn:sampleValue="" name="tax_percentage" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="tax_type" type="xsd:string"/>
+                                                                                                                <xsd:element ibmDfdlExtn:sampleValue="" name="item_id" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="name" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="item_description" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="status" type="xsd:string"/>
+                            <xsd:element ibmDfdlExtn:sampleValue="" name="pricebook_rate" type="xsd:string"/>
+                                                    <xsd:element ibmDfdlExtn:sampleValue="" name="purchase_rate" type="xsd:string"/>
+                        </xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>			
+				<xsd:element dfdl:occursCountKind="implicit" dfdl:terminator="%CR;%LF;%WSP*;" maxOccurs="unbounded" name="wssoap">
+					<xsd:complexType>
+						<xsd:sequence> 
+							<xsd:element ibmDfdlExtn:sampleValue="" name="item_id" type="xsd:string"/>
+							<xsd:element ibmDfdlExtn:sampleValue="" name="orders_placed_count" type="xsd:string"/>
+							<xsd:element ibmDfdlExtn:sampleValue="" name="pricebook_rate" type="xsd:string"/>
+                                                                                </xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>				
+                			            </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+</xsd:schema>

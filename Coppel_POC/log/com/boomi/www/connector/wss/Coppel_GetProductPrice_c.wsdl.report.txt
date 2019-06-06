@@ -1,0 +1,23 @@
+
+
+Importing file: C:\Users\Anil.RCBAN0046\Downloads\Coppel_GetProductPrice_c.wsdl
+
+The WSDL import will proceed with bindings WebServiceProviderPortBinding.
+Creating wsdl schema document for file:///C:/Users/Anil.RCBAN0046/Downloads/Coppel_GetProductPrice_c.wsdl.
+Parsing wsdl binding {http://www.boomi.com/connector/wss}WebServiceProviderPortBinding.
+Parsing wsdl binding input getProductPrice.
+Parsing wsdl binding output getProductPrice.
+Processing doc style for operation getProductPrice.
+Populating WSDL schema Coppel_GetProductPrice_c.xsd.
+Creating file Coppel_GetProductPrice_c.xsd in the workspace.
+Creating file /Coppel_POC/xsd_1.xsd in the workspace.
+Creating file /Coppel_POC/xsd_2.xsd in the workspace.
+Copying source WSDL Coppel_GetProductPrice_c.wsdl to Coppel_GetProductPrice_c.wsdl.
+
+Elapsed time processing this message definition file: 0.183 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+
