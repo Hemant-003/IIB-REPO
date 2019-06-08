@@ -22,7 +22,6 @@
       <wsdl:input message="tns:getProductPrice"/>
       <wsdl:output message="tns:getProductPriceResponse"/>
     </wsdl:operation>
-
   </wsdl:portType>
   <wsdl:binding name="WebServiceProviderPortBinding" type="tns:WebServiceProviderPortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
