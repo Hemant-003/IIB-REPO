@@ -7,9 +7,7 @@ CREATE COMPUTE MODULE Coppel_REST_Compute
 		PROPAGATE TO TERMINAL 'out2' DELETE NONE;
 		SET OutputRoot.HTTPRequestHeader."Authorization" = 'Basic '||base64Encode(CAST('trainingnaeemmuhammadumer-VV43W7.HIO8IY:8fa2497a-06b0-41dc-8b72-63d2c01ba463' as BLOB CCSID InputRoot.Properties.CodedCharSetId));
 		RETURN TRUE;
-	END;
-
-	
+	END;	
 	CREATE PROCEDURE CopyMessageHeaders() BEGIN
 		DECLARE I INTEGER 1;
 		DECLARE J INTEGER;
