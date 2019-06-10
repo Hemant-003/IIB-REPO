@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="WebServiceProvider" targetNamespace="http://www.boomi.com/connector/wss" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.boomi.com/connector/wss" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
   <wsdl:documentation>
     <wsdl:appinfo source="WMQI_APPINFO">
       <MRWSDLAppInfo imported="true">
