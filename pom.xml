@@ -20,7 +20,7 @@
 				<version>11.9.6</version>
 
 				<configuration>
-					<toolkitInstallDir>${ace.dir}</toolkitInstallDir>					
+					<toolkitInstallDir>C:\Program Files\IBM\ACE\11.0.0.4</toolkitInstallDir>					
 					<barName>HttpApplication.bar</barName>
 					<workspace>C:\acev11</workspace>
 					<versionString />
