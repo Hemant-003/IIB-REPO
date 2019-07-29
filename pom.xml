@@ -1,10 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.HttpApplication.esb</groupId>
+  <groupId>HttpApplication</groupId>
   <artifactId>HttpApplication</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <packaging>ace-bar</packaging>
-  <name>HttpApplication</name>
   
   <build>
 		<defaultGoal>package</defaultGoal>
@@ -21,8 +20,8 @@
 
 				<configuration>
 					<toolkitInstallDir>C:\Program Files\IBM\ACE\11.0.0.4</toolkitInstallDir>					
-					<barName>HttpApplication.bar</barName>
-					<workspace>C:\acev11</workspace>
+					<barName>${project.build.directory}/ace/${project.artifactId}.bar</barName>
+					<workspace>${eclipse.workspace}</workspace>
 					<versionString />
 					<cleanBuild>true</cleanBuild>
 					<deployAsSource>true</deployAsSource>
@@ -74,4 +73,3 @@
 		<connection>scm:svn:https://github.com/Hemant-003/IIB-REPO.git</connection>
 	</scm>	
 </project>
-  
