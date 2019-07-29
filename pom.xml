@@ -3,7 +3,7 @@
   <groupId>com.HttpApplication.esb</groupId>
   <artifactId>HttpApplication</artifactId>
   <version>1.0.1-SNAPSHOT</version>
-  <packaging>ace-bar</packaging>
+  <packaging>pom</packaging>
   <name>HttpApplication</name>
   
   <build>
