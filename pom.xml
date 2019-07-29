@@ -21,8 +21,8 @@
 
 				<configuration>
 					<toolkitInstallDir>${ace.dir}</toolkitInstallDir>					
-					<barName>${project.build.directory}/ace/${project.artifactId}.bar</barName>
-					<workspace>${eclipse.workspace}</workspace>
+					<barName>HttpApplication.bar</barName>
+					<workspace>C:\acev11</workspace>
 					<versionString />
 					<cleanBuild>true</cleanBuild>
 					<deployAsSource>true</deployAsSource>
