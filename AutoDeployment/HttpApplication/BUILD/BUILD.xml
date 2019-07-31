@@ -1,7 +1,7 @@
 <project name="project" default="build">
 	<target name="build">
 		<echo message="Building the Message Broker Project C:\AutoDeployment\BARfiles\HttpApplication"/>
-		<exec executable="/opt/IBM/ace-11.0.0.4/tools/mqsicreatebar.exe" spawn="false">
+		<exec executable="/opt/IBM/ace-11.0.0.4/tools/mqsicreatebar" spawn="false">
 			<arg value="-data"/>
 			<arg value="/root/IBM/ACET11/workspace"/>
 			<arg value="-b"/>
